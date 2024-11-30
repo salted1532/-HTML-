@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            cursor:pointer;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box"></div>
+    <script>
+        var span = 0;
+        var flag = false;
+        var myInterval = 0;
+        document.querySelector('#box').onclick = function(){
+            var that = this;
+            flag = !flag;
+            if (flag == true){
+                myInterval = setInterval(function(){
+                span += 20;
+                that.style.left = span +'px';}, 500);
+            }
+            else 
+            {
+                clearInterval(myInterval);
+            }
+        }
+    </script>
+</body>
+</html>

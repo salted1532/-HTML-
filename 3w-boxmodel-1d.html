@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            outline:1px solid red;
+
+            /* border-width: 1px;
+            border-style: solid;
+            border-color: red; */
+
+            border: 1px solid red;
+
+            /* padding-top: 20px;
+            padding-right: 30px;
+            padding-bottom: 40px;
+            padding-left: 50px; */
+
+            padding: 20px 30px 40px 59px;
+
+            /* margin-top: 20px;
+            margin-right: 30px;
+            margin-bottom: 40px;
+            margin-left: 50px; */
+
+            margin: 20px 30px 40px 50px;
+        }
+        #content-box, #border-box {
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+        #content-box {
+            width:200px;
+            height: 100px;
+            background-color: lightcoral;
+            padding:0 25px;
+            border:25px solid gray;
+        }
+        #border-box {
+            width:200px;
+            height: 100px;
+            background-color: lightgreen;
+            box-sizing:border-box;
+            padding:0 25px;
+            border:25px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="content-box">content-box</div>
+    <div id="border-box">border-box</div>
+    <span>위 내용</span>
+    <div>내용</div>
+    <span>아래 내용</span>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다음팁</title>
+    <style>
+        .header위 {
+            max-width: 980px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .header아래 {
+            max-width: 980px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .floatright {
+            display: flex;
+            float: right;
+        }
+        .Daum {
+            display: block;
+            width: 42px;
+            height: 17px;
+            background: url(https://t1.daumcdn.net/daumtop_deco/images/common/minidaum/minidaum_v5.png)
+            no-repeat;
+        }
+        .Daum:hover {
+            cursor:pointer;
+        }
+        .팁 {
+            display: block;
+            height: 77px;
+            background:url(https://t1.daumcdn.net/qna/icon/p_logo_180530.png)
+            no-repeat;
+            background-size: 70px 74px;
+        }
+        .팁:hover {
+            cursor:pointer;
+        }
+        .로그인 {
+            width: 50px;
+            height: 22px;
+            border: 1px solid #e4e4e4;
+            font-size: 12px;
+            line-height: 24px;
+            color: #666;
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .로그인:hover {
+            cursor:pointer;
+        }
+        .메일 {
+            overflow: hidden;
+            font-size: 0;
+            line-height: 0;
+            background: url(https://t1.daumcdn.net/daumtop_deco/images/common/minidaum/minidaum_v5.png)
+            no-repeat;
+            width: 24px;
+            height: 24px;
+            background-position: 0 -20px;
+            text-indent: -9999px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .메일:hover {
+            background-position: -60px -20px;
+            cursor:pointer;
+        }
+        .메뉴 {
+            background: url(https://t1.daumcdn.net/daumtop_deco/images/common/minidaum/minidaum_v5.png)
+            no-repeat;
+            width: 24px;
+            height: 24px;
+            background-position: -30px -20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .메뉴:hover {
+            background-position: -90px -20px;
+            cursor:pointer;
+        }
+        .전체 {
+            max-width: 970px;
+            margin-top: 50px;
+            margin-right: auto;
+            margin-left: auto;
+            border: 1px solid #ddd;
+        }
+        .백업기간박스 {
+            width: 88%;
+            font-size: 20px;
+            line-height: 25px;
+            margin: 33px 0 40px;
+            padding: 50px 50px 50px;
+            background-color: #f8f8f8;
+        }
+        .백업기간박스 dt {
+            color: #333;
+            display: block;
+            float: left;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 5px;
+            margin-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            text-align: left;
+            word-break: break-all;
+        }
+        .백업기간박스 dt::before {
+            background-color: #333;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            content: "";
+            display: inline-block;
+            height: 4px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 7px;
+            margin-top: 11px;
+            vertical-align: top;
+            width: 4px;
+        }
+        .백업기간박스 dd {
+            color: #333;
+            display: block;
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 0px;
+            margin-inline-start: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            padding-bottom: 12px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            text-align: left;
+            word-break: break-all;
+        }
+        .글 {
+            padding: 50px;
+        }
+        .글씨 {
+            color: rgb(51, 51, 51);
+            display: inline;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: left;
+            word-break: break-a;
+        }
+        .백업신청버튼 {
+            display: block;
+            width: 200px;
+            height: 60px;
+            margin: auto;
+            font-size: 20px;
+            line-height: 60px;
+            color: white;
+            text-align: center;
+            background-color: #197def;
+        }
+        .백업신청버튼:hover {
+            text-decoration: underline;
+            cursor:pointer;
+        }
+        .빨간색 {
+            color: #fb5727;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header위">
+          <a class="Daum" href="https://www.daum.net/?nil_profile=mini&nil_src=daum"></a>
+          <div class="floatright">
+            <a class="로그인">로그인</a>
+            <span class="메일"></span>
+            <span class="메뉴"></span>
+          </div>
+        </div>
+        <div class="header아래">
+          <span class="팁" href="file:///C:/Users/homersub/Desktop/HTML%ED%8C%8C%EC%9D%BC/image/%EC%9D%B8%ED%99%9C%EA%B3%BC%EC%A0%9C%202%ED%8A%B8.html"></span>
+        </div>
+      </header>
+    <hr>
+    <div class ="전체">
+        <img src="https://t1.daumcdn.net/qna/service/bg_end.png" class="bg_end"/>
+        <div class ="글">
+            <p class="글씨">
+                2020년 3월 31일 팁 서비스가 종료되었습니다.<br/>
+                그동안 팁 서비스와 함께해주신 여러분께 진심으로 감사드립니다.<br/>
+                <br/>
+                정성스럽게 작성하신 질문과 답변은 백업 신청하기를 통해 요청하시면 신청
+                순서에 따라 이메일로 전달해<br/>
+                드리겠습니다.
+              </p>
+              <dl class="백업기간박스">
+                <dt>백업 기간</dt>
+                <dd>2020년 4월 1일 ~ 2020년 6월 30일</dd>
+                <dt>백업 대상</dt>
+                <dd>본인이 작성한 질문, 답변, 오픈지식(텍스트, 사진 포함)</dd>
+                <dt>백업 방법</dt>
+                <dd>
+                  (1) 백업 신청하기 클릭(로그인 필요)<br/>
+                  (2) 백업 신청 후 발송된 이메일에서 백업 파일 다운로드
+                </dd>
+              </dl>
+        </div>
+        <a class="백업신청버튼" onclick="showMsg()">백업 신청하기</a>
+        <div class ="글">
+            <p class="글씨">
+                <em class="빨간색">2020년 6월 30일까지 백업이 가능</em>하니 소중한
+                콘텐츠는 꼭 백업하시기 바랍니다.<br/>
+                감사합니다.
+              </p>
+        </div>
+    </div>
+    <p style="text-align:center;">
+        <small>Copyright © <a href="http://www.kakaocorp.com/">Kakao Corp.</a> All rights reserved.</small>
+    </p>
+
+    <script>
+        function showMsg() {
+        alert('백업 신청을 완료했습니다.');
+    }
+    </script>
+    </script>
+</body>
+</html>

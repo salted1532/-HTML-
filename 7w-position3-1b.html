@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.relative {
+            width: 60%;
+            margin:  0 auto;
+            height: 800px;
+            background-color: lightgray;
+            position: relative;
+        }
+        div.absoulte1{
+            width: 80px;
+            height: 160px;
+            background-color: lightpink;
+            position: absolute;
+            top: 10px;
+            left: 200px;
+        }
+        div.absoulte2{
+            width: 80px;
+            height: 160px;
+            background-color: red;
+            position: absolute;
+            top: 180px;
+            left: -100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="absoulte1"></div>
+    <div class="relative">
+        <div class="absoulte2"></div>
+    </div>
+</body>
+</html>

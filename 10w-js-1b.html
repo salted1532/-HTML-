@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" onclick="clickBtn()">버튼클릭</button>
+    <a href="http://www.daum.net" onclick = "clickLink();return false;">Daum으로</a>
+    <div id = "box"></div>
+
+    <script>
+        function clickBtn(){
+            alert('버튼 클릭');
+        }
+        function clickLink(){
+            alert("링크 클릭");
+            //return false;
+        }
+
+        //선택자 + 트리커 + 핸들러 -> 콜백함수 (callback function)
+        document.querySelector('#box').onclick = function() {
+            alert('박스 클릭');
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {margin: 0;}
+        header {
+            height: 271px;
+            background: url('image/bg_body.gif')repeat-x;
+            position: relative;
+        }
+        main {
+            height: 500px;
+        }
+        #menuBox {
+            width: 780px;
+            margin: 50px auto;
+            outline: 1px solid red;
+        }
+        #menuBox ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            float: left;
+        }
+        #menuBox ul > li:first-child {
+            margin-bottom: 10px;
+        }
+        #menuBox li {
+            width: 148px;
+            height: 148px;
+            background-color: url('image/bg_cs.png')no-repeat;
+            margin-right: 10px;
+            float: left;
+        }
+        #menuBox ul > li:last-child {
+            margin-right: 0;
+        }
+        #menuBox ul > li:first-child li:nth-of-type(2) {
+            background-position: -158px 0;
+        }
+        #menuBox ul > li:first-child li:nth-of-type(3) {
+            background-position: -216px 0;
+        }
+        #menuBox a {
+            display: block;
+            height: 148px;
+            line-height: 148px;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            font-size: .85rem;
+        }
+        #menuBox a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            border-top: 1px solid lightgray;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        a.black-link {
+            color: black !important;
+        }
+        .floatleft {
+            float: left;
+        }
+        .floatright {
+            float: right;
+        }
+        #inform {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            padding: 0 50px;
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="inform">
+            <div class="floatleft">
+                [안내] 카카오 for 비즈니스 상담톡 점심시간 운영 안내
+            </div>
+            <div class="floatright">
+                아이디 찾기 | 비밀번호 찾기 | MY
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="menuBox">
+            <ul>
+                <li><a href="#">블로그</a></li>
+                <li><a href="#">카페</a></li>
+                <li><a href="#" class ="black-link">메일</a></li>
+                <li><a href="#">다음뉴스</a></li>
+                <li><a href="#">캐쉬</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">게임</a></li>
+                <li><a href="#">지도</a></li>
+                <li><a href="#">티스토리</a></li>
+                <li><a href="#">회원정보</a></li>
+                <li><a href="#">검색</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <li></li>
+        Copyright © Kakao Corp. All rights reserved.
+    </footer>
+</body>
+</html>

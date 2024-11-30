@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        선택자 {
+            css 속성(property) : 속성값
+        }
+        */
+        #mytitle {
+            background-color: orange;
+            cursor : pointer;
+        }
+    </style>
+</head>
+<body>
+<h1 title = "클릭하세요" id = "mytitle" onmouseover="showConsole()" onclick="showMsg()" >오늘은 과제가 있습니다.</h1>
+<script>
+    function showConsole() {
+        console.log('어머나?!');
+    }
+    function showMsg() {
+        alert('헉!');
+    }
+</script>
+
+<h1>신윤섭 20203396</h1>
+<a href="http://daum.net">신윤섭
+</a>202003396
+</body>
+</html>
+
+<!-- parent - child (부모, 자식)
+sibling (형제, 자매) -->

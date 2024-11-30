@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #trump{
+            width: 100px;
+            height: 100px;
+            background:url('image/trump.png') no-repeat;
+            outline:1px solid red;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+    </style>
+</head>
+<body>
+    <div id = "trump"></div>
+
+<script>
+var leftright = 0;
+var topbottom = 0;    
+var span = 0;
+var direction = 40;
+var trump = document.querySelector('#trump');
+document.onkeydown = function(evt){
+//console.log(evt.keyCode);
+
+setInterval(function(){
+    span -= 100;
+    if (span <= -500) {
+        span = 0;
+    }
+    switch(direction){
+    case 37: // left arrow
+    trump.style.backgroundPosition = span + 'px -300px';
+    break;
+    case 38: // top arrow
+    trump.style.backgroundPosition = span + 'px -200px';
+    break;
+    case 39: // right arrow
+    trump.style.backgroundPosition = span + 'px -100px';
+    break;
+    case 40: // bottom arrow
+    trump.style.backgroundPosition = span + 'px 0';
+    break;
+    }
+},250)
+
+direction = evt.keyCode
+switch(direction){
+    case 37: // left arrow
+    leftright -= 10;
+    trump.style.left = leftright + 'px';
+    trump.style.backgroundPosition = '0 -300px';
+    break;
+    case 38: // top arrow
+    topbottom -= 10;
+    trump.style.top = topbottom + 'px';
+    trump.style.backgroundPosition = '0 -200px';
+    break;
+    case 39: // right arrow
+    leftright += 10;
+    trump.style.left = leftright + 'px';
+    trump.style.backgroundPosition = '0 -100px';
+    break;
+    case 40: // bottom arrow
+    topbottom += 10;
+    trump.style.top = topbottom + 'px';
+    trump.style.backgroundPosition = '0 0';
+    break;
+    }
+}    
+</script>
+    <!-- break vs continue 반복문 자체에서 벗어나는거 break 자기 순서를 건너뛰는것이 continue  -->
+</body>
+</html>

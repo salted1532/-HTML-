@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.box {
+            width:200px;
+            height:200px;
+            
+        }
+        div.box.blue {
+            background-color:lightblue;
+        }
+        div.box.blue.coral {
+            background-color:lightcoral;
+        }
+        div.circle {
+            width:100px;
+            height:100px;
+            background-color: green;
+            border-radius:50%;
+        }
+        div.box div.circle {
+            background-color: lightblue;
+        }
+        input[name="userid"] {
+            padding:10px 5px;
+            font-size:1.2em; /* 1em = 16px */
+        }
+        input[name="userid"]:hover {
+            background-color: yellow;
+        }
+        input[name="userid"]:focus {
+            background-color: lightpink;
+            border: 1px sloid #ddd;
+        }
+        /* LoVe HAte */
+        a:link { /* 화면에 보일 떄 */
+            font-weight: bold;
+            font-size: larger;
+        }
+        a:visited { /* 클릭한 한 후 */
+
+        }
+        a:hover { /* 마우스 올려놓았을때 */
+            background-color: lightblue;
+            text-decoration:none;
+        }
+        a:active { /* 마우스 다운*/
+            background-color: lightcoral;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class = "box coral blue">
+        <div class = "circle"></div>
+    </div>
+
+    <div class = "circle"></div>
+
+    <input  class="myinput" type="text" name="userid" placeholder="아이디 입력">
+
+    <hr>
+
+    <a href="http://seoil.ac.kr">서일대학교 가기</a>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link vs anchor</title>
+    <style>
+        #gotop{
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+
+        }
+    </style>
+</head>
+<body>
+    <a href="#bottom" name="top">top에서 bottom으로</a>\
+    <div style = "height:500px"></div>
+    <a href="top" name="middle"></a>
+    <a href="bottom"></a>
+    <a href="#middle" name ="bottom"></a>
+    <div id = "gotop">
+        <a href="gotop">
+            위로
+        </a>
+    </div>
+</body>
+</html>

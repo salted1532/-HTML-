@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>비디오</title>
+<style>
+video { background:lightcoral; }
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+</style>
+</head>
+<body>
+
+<video id="myVideo" width="320" height="240" controls>
+    <source src="스크래치야반가워.mp4" type="video/mp4">
+    <source src="스크래치야반가워.ogg" type="video/ogg">
+    사용하는 브라우저가 HTML5(video태그)를 지원하지 않습니다.
+</video>
+<br>
+<button type="button">시작(play)</button>
+<button type="button">멈춤(pause)</button>
+
+<hr>
+
+<!-- <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/W3eIzS0E_G0" frameborder="0" allowfullscreen></iframe>
+</div> -->
+
+<script>
+var video = document.querySelector('#myVideo');
+var btns = document.querySelectorAll('button');
+
+video.poster = 'logo.jpg';
+
+btns[0].addEventListener('click', function(){
+    video.play();
+});
+
+btns[1].addEventListener('click', function(){
+    video.pause();
+});
+</script>
+</body>
+</html>

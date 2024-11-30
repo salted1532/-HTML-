@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trump</title>
+<style>
+#trump {
+    width:100px;
+    height:100px;
+    background:url('img/trump.png') no-repeat;
+    /* outline:1px solid red; */
+    position:absolute;
+    top:0;
+    left:0;
+}    
+</style>
+</head>
+<body>
+<div id="trump"></div>
+
+<script>
+var leftright = 0;
+var topbottom = 0;    
+document.onkeydown = function(evt){
+    //console.log(evt.keyCode);
+    var trump = document.querySelector('#trump');
+    switch(evt.keyCode){
+        case 37: // left arrow
+            leftright -= 10;
+            trump.style.left = leftright + 'px';
+            trump.style.backgroundPosition = '0 -300px';
+            break;
+        case 38: // top arrow
+            topbottom -= 10;
+            trump.style.top = topbottom + 'px';
+            trump.style.backgroundPosition = '0 -200px';
+            break;
+        case 39: // right arrow
+            leftright += 10;
+            trump.style.left = leftright + 'px';
+            trump.style.backgroundPosition = '0 -100px';
+            break;
+        case 40: // bottom arrow
+            topbottom += 10;
+            trump.style.top = topbottom + 'px';
+            trump.style.backgroundPosition = '0 0';
+            break;
+    }
+}    
+</script>
+</body>
+</html>

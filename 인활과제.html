@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다음 팁!</title>
+    <style>
+    .backup {
+        width: 80%;
+        font-size: 20px;
+        line-height: 25px;
+        margin: 33px 0 40px;
+        padding: 50px 50px 50px;
+        background-color: #f8f8f8;
+        }
+    .button {
+        display: block;
+        width: 200px;
+        height: 60px;
+        margin: auto;
+        font-size: 20px;
+        line-height: 60px;
+        color: white;
+        text-align: center;
+        background-color: #197def;
+    }
+    .팁 {
+            display: block;
+            height: 77px;
+            background:url(https://t1.daumcdn.net/qna/icon/p_logo_180530.png)
+            no-repeat;
+            background-size: 70px 74px;
+        }
+        .팁:hover {
+            cursor:pointer;
+        }
+    #TIP {
+        width:130px;
+        height:100px;
+        background:url('p_logo_180530.png')no-repeat;
+        cursor:pointer;
+    }
+    #bg_end {
+        width:950px;
+        height:300px;
+        background:url('image/bg_end.png')no-repeat;
+        /* outline:1px solid red; */
+        position:center;
+    }
+    .button {
+        cursor:pointer;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .뭉치기라인 {
+        width: 950px;
+        margin:auto;
+        border: 1px solid lightgray;
+    }
+    .뭉치기라인 p {
+        padding: 40px 40px 40px;
+    }
+    .빨간색 {
+        color: #fb5727;
+        font-style: normal;
+    }
+    </style>
+</head>
+<body>
+    <span class="팁" href="file:///C:/Users/homersub/Desktop/HTML%ED%8C%8C%EC%9D%BC/image/%EC%9D%B8%ED%99%9C%EA%B3%BC%EC%A0%9C%202%ED%8A%B8.html"></span>
+    <hr>
+        <div class="뭉치기라인">
+            <div id ="bg_end" ></div>
+                <p>
+                2020년 3월 31일 팁 서비스가 종료되었습니다.<br>
+                그동안 팁 서비스와 함께해주신 여러분께 진심으로 감사드립니다.<br>
+                <br>
+                정성스럽게 작성하신 질문과 답변은 백업 신청하기를 통해 요청하시면 신청 순서에 따라 이메일로 전달해<br> 드리겠습니다.
+                </p>
+                    <dl class="backup">
+                        <dt>백업 기간</dt>
+                            <dd>2020년 4월 1일 ~ 2020년 6월 30일</dd>
+                        <dt>백업 대상</dt>
+                            <dd>본인이 작성한 질문, 답변, 오픈지식(텍스트, 사진 포함)</dd>
+                        <dt>백업 방법</dt>
+                            <dd>
+                            (1) 백업 신청하기 클릭(로그인 필요)<br>
+                            (2) 백업 신청 후 발송된 이메일에서 백업 파일 다운로드
+                            </dd>
+                    </dl>
+                <a class="button"onclick="showMsg()">백업 신청하기</a>
+	            <p class="">
+                <em class="빨간색">2020년 6월 30일까지 백업이 가능</em>하니 소중한 콘텐츠는 꼭 백업하시기 바랍니다.<br>
+                감사합니다.
+                </p>
+                </div>
+                <div id="daumFoot" class="footer_comm" role="contentinfo">
+                    <p style="text-align:center;">
+                        <small>Copyright © <a href="http://www.kakaocorp.com/">Kakao Corp.</a> All rights reserved.</small>
+                    </p>
+        </div>
+    <script>
+    function showMsg() {
+        alert('백업 신청을 완료했습니다.');
+    }
+    document.querySelector('#TIP').onclick = function(){
+        window.location.replace("file:///C:/Users/homersub/Desktop/HTML%ED%8C%8C%EC%9D%BC/image/%EC%9D%B8%ED%99%9C%EA%B3%BC%EC%A0%9C.html");
+    }
+    </script>
+    
+</body>
+</html>

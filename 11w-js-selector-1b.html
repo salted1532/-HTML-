@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+
+            /* background-color: lightcoral; */
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            document.querySelector('#box').style.backgroundColor = 'lightblue';
+        }
+    </script>
+</head>
+<body>
+<!-- 하나의 값 스칼라 변수 , 여러개의 값 오브젝트  -->
+
+    <div id="box"></div>
+
+    <script>
+        //event trigger => click, mouseover, mousedown, mouseup, keydown, keyup, load ...
+        //document.getElementById('box').style.backgroundColor = 'lightgreen';
+        //document.querySelector('#box').style.backgroundColor = 'lightblue';
+
+        //복수 개의 요소를 가리킴
+        //document.getElementsByTagName('div')[0].style.backgroundColor = 'lightgray';
+        //document.querySelectorAll('div')[0].style.backgroundColor = 'lightpink';
+    </script>
+</body>
+</html>

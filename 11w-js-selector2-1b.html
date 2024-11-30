@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mylist {
+            list-style-type: none;
+            padding: 0;
+        }
+        #mylist > li {
+            border: 1px solid lightcoral;
+            margin: 10px 0;
+            line-height: 2rem;
+        }
+        #mylist > li:hover{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <ul if="mylist">
+        <li>첫번째</li>
+        <li>두번째</li>
+        <li>셋번째</li>
+        <li>네번째</li>
+        <li>다섯번째</li>
+    </ul>
+    <script>
+        var lists = document.querySelectorAll('#mylist > li');
+        console.log(lists);
+        for(var i = 0; i < lists.length; i++){
+            lists[i].onclick = function(){
+                this.style.backgroundColor = 'yellow'
+            }
+            //lists[i].style.backgroundColor = 'yellow'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>오디오</title>
+</head>
+<body>
+
+<audio id="myAudio"></audio>
+
+<button type="button">시작(play)</button>
+<button type="button">멈춤(pause)</button>
+
+<hr>
+
+<audio controls>
+    <source src="happybirthday.ogg" type="audio/ogg">
+    <source src="happybirthday.mp3" type="audio/mpeg">
+    사용하는 브라우저가 HTML5(audio태그)를 지원하지 않습니다.
+</audio>
+
+<script>
+var audio = document.querySelector('#myAudio');
+var btns = document.querySelectorAll('button');
+
+btns[0].addEventListener('click', function(){
+    audio.src = 'happybirthday.mp3';
+    audio.play();
+});
+
+btns[1].addEventListener('click', function(){
+    audio.pause();
+});
+</script>
+</body>
+</html>
