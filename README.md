@@ -80,7 +80,7 @@ IT CookBook, HTML5 웹 프로그래밍 입문 (3판), 한빛미디어
 ## 🎨 CSS
 > **역할:** 표현(Presentation)을 담당, HTML 구조에 디자인 적용
 
-주요 개념
+### 주요 개념
 - 선택자(Selector): id, class, 속성, 가상클래스(:hover, :focus)
   
 - 박스모델(Box Model): padding, border, margin, box-sizing
@@ -118,7 +118,7 @@ IT CookBook, HTML5 웹 프로그래밍 입문 (3판), 한빛미디어
 ## ⚙️ JavaScript
 > **역할:** 동작(Behavior)을 제어, 사용자 상호작용 구현
 
-주요 개념
+### 주요 개념
 - 변수(var, let, const)
 
 - 데이터 타입, 연산자
@@ -148,8 +148,6 @@ btn.addEventListener("click", function() {
   alert("버튼이 클릭되었습니다!");
 });
 ```
-## 🧾 참고 사이트
-
 ## 🧾 참고 사이트
 
 - [W3Schools](https://www.w3schools.com)
