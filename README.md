@@ -75,23 +75,15 @@
 역할: 표현(Presentation)을 담당, HTML 구조에 디자인 적용
 
 주요 개념
-선택자(Selector): id, class, 속성, 가상클래스(:hover, :focus)
-
-박스모델(Box Model): padding, border, margin, box-sizing
-
-블록요소 vs 인라인요소
-
-위치 지정: position(static, relative, absolute)
-
-정렬: float, z-index, display
-
-색상표현: #RRGGBB, rgb(), rgba()
-
-폰트 및 웹폰트(Web Font)
-
-반응형 웹(Responsive Web) — @media 쿼리
-
-레이아웃 설계(UI/UX)
+- 선택자(Selector): id, class, 속성, 가상클래스(:hover, :focus)
+- 박스모델(Box Model): padding, border, margin, box-sizing
+- 블록요소 vs 인라인요소
+- 위치 지정: position(static, relative, absolute)
+- 정렬: float, z-index, display
+- 색상표현: #RRGGBB, rgb(), rgba()
+- 폰트 및 웹폰트(Web Font)
+- 반응형 웹(Responsive Web) — @media 쿼리
+- 레이아웃 설계(UI/UX)
 
 ### 예시
 ```css
@@ -113,25 +105,25 @@
 역할: 동작(Behavior)을 제어, 사용자 상호작용 구현
 
 주요 개념
-변수(var, let, const)
+- 변수(var, let, const)
 
-데이터 타입, 연산자
+- 데이터 타입, 연산자
 
-배열(Array), 객체(Object)
+- 배열(Array), 객체(Object)
 
-함수(Function)과 메서드(Method)
+- 함수(Function)과 메서드(Method)
 
-DOM(Document Object Model) 조작
+- DOM(Document Object Model) 조작
 → getElementById, querySelector, innerHTML, innerText
 
-이벤트(Event): click, mouseover, keyup
+- 이벤트(Event): click, mouseover, keyup
 → 트리거(Trigger) + 핸들러(Handler)
 
-제어문: if, for, while, break, continue
+- 제어문: if, for, while, break, continue
 
-타이밍 함수: setTimeout(), setInterval()
+- 타이밍 함수: setTimeout(), setInterval()
 
-알고리즘 기본 구조: 순차(Sequence), 선택(Selection), 반복(Iteration)
+- 알고리즘 기본 구조: 순차(Sequence), 선택(Selection), 반복(Iteration)
 
 ### 예시
 ```javascript
