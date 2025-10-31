@@ -93,8 +93,8 @@
 
 레이아웃 설계(UI/UX)
 
-예시
-css
+### 예시
+```css
 코드 복사
 .container {
   width: 80%;
@@ -107,7 +107,9 @@ css
   padding: 20px;
   text-align: center;
 }
-⚙️ JavaScript
+```
+
+## ⚙️ JavaScript
 역할: 동작(Behavior)을 제어, 사용자 상호작용 구현
 
 주요 개념
@@ -131,8 +133,8 @@ DOM(Document Object Model) 조작
 
 알고리즘 기본 구조: 순차(Sequence), 선택(Selection), 반복(Iteration)
 
-예시
-javascript
+### 예시
+```javascript
 코드 복사
 const btn = document.getElementById("btn");
 
@@ -149,23 +151,12 @@ CSS Reference
 Emmet Cheat Sheet
 
 Bootstrap
+```
 
-📚 교재
+## 📚 교재
 IT CookBook, HTML5 웹 프로그래밍 입문 (3판), 한빛미디어
 
 🧠 키워드 요약
 HTML = Structure
 CSS = Style
 JavaScript = Behavior
-
-yaml
-코드 복사
-
----
-
-원하신다면 이 README 버전에  
-✅ “실습 예시 이미지” 섹션이나  
-✅ “과제 및 프로젝트 목록” 섹션  
-도 추가해드릴 수 있습니다.  
-
-어떤 방식으로 확장할까요? (예: 과제 중심 / 포트폴리오 중심 / 깃허브용 간결형 등)
