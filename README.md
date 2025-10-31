@@ -49,12 +49,19 @@
 
 ### 주요 개념
 - 기본 구조: `<html>`, `<head>`, `<body>`
+  
 - 제목 태그 `<h1>`~`<h6>`, 문단 `<p>`, 링크 `<a>`, 이미지 `<img>`
+  
 - 리스트: `<ul>`, `<ol>`, `<li>`
+  
 - 구분요소: `<div>`(block), `<span>`(inline)
+  
 - 속성(Attribute)과 값(Value)
+  
 - 메타데이터, 부모/자식/형제 관계
+  
 - 절대경로(`https://example.com/path`) vs 상대경로(`../path/file.html`)
+  
 - 시맨틱(semantic) 마크업의 중요성
 
 ### 예시
@@ -76,13 +83,21 @@
 
 주요 개념
 - 선택자(Selector): id, class, 속성, 가상클래스(:hover, :focus)
+  
 - 박스모델(Box Model): padding, border, margin, box-sizing
+  
 - 블록요소 vs 인라인요소
+  
 - 위치 지정: position(static, relative, absolute)
+  
 - 정렬: float, z-index, display
+  
 - 색상표현: #RRGGBB, rgb(), rgba()
+
 - 폰트 및 웹폰트(Web Font)
+  
 - 반응형 웹(Responsive Web) — @media 쿼리
+  
 - 레이아웃 설계(UI/UX)
 
 ### 예시
