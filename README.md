@@ -68,7 +68,9 @@
     <p>이것은 HTML의 기본 구조입니다.</p>
   </body>
 </html>
-🎨 CSS
+
+
+## 🎨 CSS
 역할: 표현(Presentation)을 담당, HTML 구조에 디자인 적용
 
 주요 개념
